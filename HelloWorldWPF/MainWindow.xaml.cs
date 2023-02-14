@@ -28,8 +28,7 @@ namespace HelloWorldWPF
             string s;
             try
             {
-                s = Windows.System.UserProfile.GlobalizationPreferences.Languages[0].ToString();
-                s=s.Substring(0,s.IndexOf('-'));
+                s = CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
                 d = this.FindResource(s) as ResourceDictionary;
             }
             catch (ResourceReferenceKeyNotFoundException ex)

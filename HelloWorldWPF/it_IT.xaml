@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="ciao">Ciao</system:String>
+    <system:String x:Key="festafinita">la festa è finita: Francesca sta arrivando</system:String>
+    <system:String x:Key="inseriscinome">Inserisci il tuo nome</system:String>
+    <system:String x:Key="numeronesoft">Benvenuti a numeronesoft</system:String>
+</ResourceDictionary>
+    

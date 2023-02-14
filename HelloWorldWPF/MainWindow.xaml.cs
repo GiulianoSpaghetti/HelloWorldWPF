@@ -25,9 +25,12 @@ namespace HelloWorldWPF
         public MainWindow()
         {
             InitializeComponent();
+            string s;
             try
             {
-                d = this.FindResource(CultureInfo.InstalledUICulture.TwoLetterISOLanguageName) as ResourceDictionary;
+                s = Windows.System.UserProfile.GlobalizationPreferences.Languages[0].ToString();
+                s=s.Substring(0,s.IndexOf('-'));
+                d = this.FindResource(s) as ResourceDictionary;
             }
             catch (ResourceReferenceKeyNotFoundException ex)
             { d = this.FindResource("en") as ResourceDictionary; }
